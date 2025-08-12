@@ -13,7 +13,7 @@ Este es mi portfolio personal diseñado para mostrar proyectos, experiencia, hab
 
 ## Enlace al sitio desplegado
 
-[https://vitucab.github.io/](https://vitucab.github.io/)
+https://vitucab.github.io/portfolio-victorina-cabrera/
 
 ## Créditos
  
