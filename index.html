@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Victorina Cabrera</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-pink-50 text-black-800 font-sans scroll-smooth">
+  <header class="fixed top-0 left-0 w-full bg-pink-100 shadow-md z-50">
+    <nav class="max-w-6xl mx-auto flex justify-between items-center p-4 md:p-6">
+      <a href="#inicio" class="font-bold text-2xl text-pink-600 hover:text-pink-800 transition">Victorina♡</a>
+      <ul class="hidden md:flex space-x-8 text-lg">
+        <li><a href="#inicio" class="hover:text-pink-600 transition">Inicio</a></li>
+        <li><a href="#projects" class="hover:text-pink-600 transition">Proyectos</a></li>
+        <li><a href="#experience" class="hover:text-pink-600 transition">Experiencia</a></li>
+        <li><a href="#skills" class="hover:text-pink-600 transition">Habilidades</a></li>
+        <li><a href="#contacto" class="hover:text-pink-600 transition">Contacto</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none text-pink-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <div id="menu" class="hidden md:hidden bg-pink-50 shadow-md">
+      <ul class="flex flex-col p-4 space-y-4 text-lg">
+        <li><a href="#inicio" class="hover:text-pink-600 transition block">Inicio</a></li>
+        <li><a href="#projects" class="hover:text-pink-600 transition block">Proyectos</a></li>
+        <li><a href="#experience" class="hover:text-pink-600 transition block">Experiencia</a></li>
+        <li><a href="#skills" class="hover:text-pink-600 transition block">Habilidades</a></li>
+        <li><a href="#contacto" class="hover:text-pink-600 transition block">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+<section id="inicio" class="relative bg-gradient-to-r from-pink-300 via-pink-100 to-pink-300 min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-10">
+  <div class="inline-block rounded-full border-8 border-pink-600 p-1 mb-8 shadow-lg hover:shadow-pink-500 transition-shadow duration-500">
+    <img src="fotos/yo.jpg" alt="Mi foto" class="w-48 h-48 rounded-full object-cover mx-auto" />
+  </div>
+   <h1 class="text-xl text-gray-700 mb-2">¡Hola, soy</h1>
+  <h1 class="text-5xl md:text-7xl font-extrabold text-pink-700 mb-4 leading-tight drop-shadow-md">
+    Victorina <span class="text-pink-700">Cabrera</span>
+  </h1>
+  <h2 class="text-2xl md:text-3xl italic text-pink-700 mb-6 drop-shadow-sm">
+    Desarrolladora Web Junior
+  </h2>
+  <p class="max-w-xl mx-auto text-gray-700 text-lg md:text-xl mb-8 leading-relaxed drop-shadow-sm">
+    Apasionada por crear sitios creativos, funcionales y que reflejen tu estilo personal.
+  </p>
+  <div class="flex gap-6">
+    <a href="#contacto"
+       class="bg-pink-700 text-white px-8 py-3 rounded-full shadow-lg hover:bg-pink-800 hover:shadow-pink-900 transition transform hover:scale-110">
+      ¡Habláme!
+    </a>
+    <a href="#projects"
+       class="border-2 border-pink-700 text-pink-700 px-8 py-3 rounded-full hover:bg-pink-200 transition transform hover:scale-110">
+      Ver Proyectos
+    </a>
+    <a href="" download
+    class="border-2 border-pink-700 text-pink-700 px-8 py-3 rounded-full hover:bg-pink-200 transition transform hover:scale-110">
+    Descargar CV
+  </a>
+  </div>
+</section>
+
+  <main class="pt-24 max-w-5xl mx-auto px-6">
+
+    <section id="projects" class="my-20 fade-in">
+      <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Proyectos</h3>
+      <div class="grid gap-8 md:grid-cols-3">
+
+        <article class="bg-pink-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+          <img src="fotos/tarjeta.png" alt="Proyecto Tarjeta Presentacion" class="w-full object-cover h-48" />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2 text-pink-700">Tarjeta de Presentación</h4>
+            <p class="text-gray-700 text-sm mb-3">Una tarjeta de presentación que muestra mis estudios y gustos.</p>  
+            <a href="https://vitucab.github.io/tarjeta-presentacion/" class="text-pink-600 hover:underline">Ver proyecto</a>
+          </div>
+        </article>
+
+        <article class="bg-pink-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+          <img src="fotos/menu.png" alt="Proyecto Menu Digital" class="w-full object-cover h-48" />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2 text-pink-700">Menú Digital</h4>
+            <p class="text-gray-700 text-sm mb-3">Una página básica que simula un menú digital para Kuromi Kitchen.</p>
+            <a href="https://vitucab.github.io/menu-digital/" class="text-pink-600 hover:underline">Ver proyecto</a>
+          </div>
+        </article>
+
+        <article class="bg-pink-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
+          <img src="fotos/juego.png" alt="Proyecto Juego" class="w-full object-cover h-48" />
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2 text-pink-700">Juego simil Papers Please</h4>
+            <p class="text-gray-700 text-sm mb-3">Un juego que desarrollamos con compañeros basado en QT Creator, similar al juego "Papers Please".</p>
+            <a href="https://github.com/GoriliGorili/TPoo" class="text-pink-600 hover:underline">Ver proyecto</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="my-20 fade-in">
+      <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Experiencia</h3>
+      <ul class="space-y-6 max-w-3xl mx-auto text-gray-700">
+        <li class="border-l-4 border-pink-600 pl-4">
+          <h4 class="font-semibold text-xl">Desarrollador Frontend - Freelance</h4>
+          <p class="italic text-sm text-pink-500">Actualidad</p>
+          <p>Ampliando conocimientos sobre sitios web, enfocándome en diseño responsivo, usabilidad y buenas prácticas.</p>
+        </li>
+        <li class="border-l-4 border-pink-600 pl-4">
+          <h4 class="font-semibold text-xl">Estudiante de Licenciatura en Sistemas de Información</h4>
+          <p class="italic text-sm text-pink-500">Enero 2022 - Actualidad</p>
+          <p>Estudiando para diseñar, desarrollar y gestionar sistemas tecnológicos que ayudan a las organizaciones a procesar y manejar información.</p>
+        </li>
+        <li class="border-l-4 border-pink-600 pl-4">
+          <h4 class="font-semibold text-xl">Estudiante de Ingeniería Industrial</h4>
+          <p class="italic text-sm text-pink-500">Enero 2021 - Diciembre 2021</p>
+          <p>Realicé estudios con el fin de optimizar procesos, recursos y sistemas para mejorar la productividad y eficiencia en empresas.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="my-20 fade-in">
+      <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Habilidades</h3>
+      <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-gray-700 text-center">
+        <div class="bg-pink-100 font-bold rounded-lg p-4 shadow hover:shadow-lg transition transform hover:scale-105">C++</div>
+        <div class="bg-pink-100 font-bold rounded-lg p-4 shadow hover:shadow-lg transition transform hover:scale-105">HTML</div>
+        <div class="bg-pink-100 font-bold rounded-lg p-4 shadow hover:shadow-lg transition transform hover:scale-105">CSS</div>
+        <div class="bg-pink-100 font-bold rounded-lg p-4 shadow hover:shadow-lg transition transform hover:scale-105">JavaScript</div>
+        <div class="bg-pink-100 font-bold rounded-lg p-4 shadow hover:shadow-lg transition transform hover:scale-105">GitHub</div>
+        <div class="bg-pink-100 font-bold rounded-lg p-4 shadow hover:shadow-lg transition transform hover:scale-105">QT</div>
+      </div>
+    </section>
+
+    <section id="contacto" class="my-20 fade-in max-w-3xl mx-auto">
+      <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Contacto</h3>
+      <p class="mb-6 text-gray-700 max-w-md">¡Me encantaría saber de vos! Podés escribirme para proyectos, consultas o simplemente para saludar ♡
+      </p>
+      <form class="bg-pink-100 p-6 rounded-lg shadow-md" onsubmit="return false;">
+        <label for="name" class="block mb-2 font-semibold text-gray-700">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required
+          class="w-full p-3 mb-4 rounded-md border bg-pink-50 border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+
+        <label for="email" class="block mb-2 font-semibold text-gray-700">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" required
+          class="w-full p-3 mb-4 rounded-md border bg-pink-50 border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+
+        <label for="message" class="block mb-2 font-semibold text-gray-700">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí..."
+          required class="w-full p-3 mb-4 rounded-md bg-pink-50 border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+
+        <button
+          class="bg-pink-600 text-white px-6 py-3 rounded-md font-semibold shadow-md hover:bg-pink-700 transition transform hover:scale-105 w-full md:w-auto"
+          type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer class="py-6 border-t border-pink-300 mt-20 text-center text-gray-600">
+    <div class="flex justify-center gap-8 mb-4">
+      <a href="https://github.com/vitucab" target="_blank" rel="noopener" aria-label="GitHub"
+        class="text-pink-600 hover:text-pink-800 transition text-3xl">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7">
+          <path
+            d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.996.108-.775.418-1.305.76-1.605-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.984-.399 3.005-.404 1.02.005 2.048.138 3.006.404 2.29-1.552 3.295-1.23 3.295-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.609-2.807 5.624-5.48 5.922.43.37.814 1.1.814 2.22v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/maria-victorina-cabrera-50ab92320/" target="_blank" rel="noopener" aria-label="LinkedIn"
+        class="text-pink-600 hover:text-pink-800 transition text-3xl">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7">
+          <path
+            d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.78-1.75-1.75S5.53 4.22 6.5 4.22s1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.28h-3v-5.5c0-1.32-.03-3.03-1.85-3.03-1.85 0-2.13 1.44-2.13 2.93v5.6h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.6v5.58z" />
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/vitucabrera/" target="_blank" rel="noopener" aria-label="Instagram"
+        class="text-pink-600 hover:text-pink-800 transition text-3xl">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" class="w-7 h-7">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+          <path d="M16 11.37a4 4 0 1 1-7.999.001A4 4 0 0 1 16 11.37z" />
+          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5" />
+        </svg>
+      </a>
+    </div>
+    <small>Realizado por Victorina Cabrera © 2025 Todos los derechos reservados.</small>
+  </footer>
+  </main>
+</body>
+</html>
