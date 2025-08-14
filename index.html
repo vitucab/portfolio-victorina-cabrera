@@ -5,7 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio Victorina Cabrera</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
+    :root {
+    --sanrio-pink: #FFC0CB; /* Un rosa pastel característico */
+  }
+  .font-sanrio {
+    font-family: 'Pacifico', cursive;
+  }
+  .title-shadow {
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5); /* Sombra para un toque suave */
+  }
+  body {
+    cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym44.cur'), auto; /* Cursor de Hello Kitty */
+}
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
@@ -17,12 +32,39 @@
         transform: translateY(0);
       }
     }
+    @keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+.bubbles-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+.bubble {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.205);
+  border-radius: 50%;
+  animation: moveBubble 10s linear infinite;
+}
+@keyframes moveBubble {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-100vh) scale(0); opacity: 0; }
+}
   </style>
 </head>
 <body class="bg-pink-50 text-black-800 font-sans scroll-smooth">
   <header class="fixed top-0 left-0 w-full bg-pink-100 shadow-md z-50">
     <nav class="max-w-6xl mx-auto flex justify-between items-center p-4 md:p-6">
-      <a href="#inicio" class="font-bold text-2xl text-pink-600 hover:text-pink-800 transition">Victorina♡</a>
+      <a href="#inicio" class="font-bold text-2xl text-pink-600 hover:text-pink-800 transition font-sanrio">Victorina♡</a>
       <ul class="hidden md:flex space-x-8 text-lg">
         <li><a href="#inicio" class="hover:text-pink-600 transition">Inicio</a></li>
         <li><a href="#projects" class="hover:text-pink-600 transition">Proyectos</a></li>
@@ -51,11 +93,12 @@
 
   <!-- hero -->
 <section id="inicio" class="relative bg-gradient-to-r from-pink-300 via-pink-100 to-pink-300 min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-10">
-  <div class="inline-block rounded-full border-8 border-pink-600 p-1 mb-8 shadow-lg hover:shadow-pink-500 transition-shadow duration-500">
+  <div class="bubbles-background"></div>
+  <div class="inline-block rounded-full border-8 border-pink-600 p-1 mb-8 shadow-lg hover:shadow-pink-500 transition-shadow duration-500 float">
     <img src="fotos/yo.jpg" alt="Mi foto" class="w-48 h-48 rounded-full object-cover mx-auto" />
   </div>
    <h1 class="text-xl text-gray-700 mb-2">¡Hola, soy</h1>
-  <h1 class="text-5xl md:text-7xl font-extrabold text-pink-700 mb-4 leading-tight drop-shadow-md">
+  <h1 class="text-5xl md:text-7xl font-extrabold text-pink-700 mb-4 leading-tight drop-shadow-md font-sanrio">
     Victorina <span class="text-pink-700">Cabrera</span>
   </h1>
   <h2 class="text-2xl md:text-3xl italic text-pink-700 mb-6 drop-shadow-sm">
@@ -83,7 +126,7 @@
   <main class="pt-24 max-w-5xl mx-auto px-6">
 
     <section id="projects" class="my-20 fade-in">
-    <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Proyectos</h3>
+    <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block font-sanrio">Proyectos</h3>
     
     <div id="project-container" class="relative">
 
@@ -118,7 +161,7 @@
 </section>
 
     <section id="experience" class="my-20 fade-in">
-    <h3 class="text-3xl font-bold text-pink-600 mb-12 border-b-4 border-pink-400 inline-block">Experiencia</h3>
+    <h3 class="text-3xl font-bold text-pink-600 mb-12 border-b-4 border-pink-400 inline-block font-sanrio">Experiencia</h3>
     
     <div class="relative max-w-4xl mx-auto">
         <div class="absolute inset-0 flex items-center justify-center">
@@ -169,7 +212,7 @@
 </section>
 
     <section id="skills" class="my-20 fade-in">
-    <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Habilidades</h3>
+    <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block font-sanrio">Habilidades</h3>
     <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
 
       <div class="group relative bg-pink-100 rounded-lg p-6 shadow-lg overflow-hidden cursor-pointer hover:bg-pink-200 transition">
@@ -218,7 +261,7 @@
 </section>
 
     <section id="contacto" class="my-20 fade-in max-w-3xl mx-auto">
-      <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Contacto</h3>
+      <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block font-sanrio">Contacto</h3>
       <p class="mb-6 text-gray-700 max-w-md">¡Me encantaría saber de vos! Podés escribirme para proyectos, consultas o simplemente para saludar ♡
       </p>
       <form class="bg-pink-100 p-6 rounded-lg shadow-md" onsubmit="return false;">
