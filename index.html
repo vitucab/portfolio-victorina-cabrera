@@ -49,7 +49,7 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- hero -->
 <section id="inicio" class="relative bg-gradient-to-r from-pink-300 via-pink-100 to-pink-300 min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-10">
   <div class="inline-block rounded-full border-8 border-pink-600 p-1 mb-8 shadow-lg hover:shadow-pink-500 transition-shadow duration-500">
     <img src="fotos/yo.jpg" alt="Mi foto" class="w-48 h-48 rounded-full object-cover mx-auto" />
@@ -83,37 +83,39 @@
   <main class="pt-24 max-w-5xl mx-auto px-6">
 
     <section id="projects" class="my-20 fade-in">
-      <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Proyectos</h3>
-      <div class="grid gap-8 md:grid-cols-3">
+    <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Proyectos</h3>
+    
+    <div id="project-container" class="relative">
 
-        <article class="bg-pink-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="fotos/tarjeta.png" alt="Proyecto Tarjeta Presentacion" class="w-full object-cover h-48" />
-          <div class="p-4">
-            <h4 class="font-semibold text-lg mb-2 text-pink-700">Tarjeta de Presentación</h4>
-            <p class="text-gray-700 text-sm mb-3">Una tarjeta de presentación que muestra mis estudios y gustos.</p>  
-            <a href="https://vitucab.github.io/tarjeta-presentacion/" class="text-pink-600 hover:underline">Ver proyecto</a>
-          </div>
+        <article class="project-slide active-slide bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
+            <img src="fotos/tarjeta.png" alt="Proyecto Tarjeta Presentacion" class="w-full object-cover h-48" />
+            <div class="p-4">
+                <h4 class="font-semibold text-lg mb-2 text-pink-700">Tarjeta de Presentación</h4>
+                <p class="text-gray-700 text-sm mb-3">Una tarjeta de presentación que muestra mis estudios y gustos.</p>
+                <a href="https://vitucab.github.io/tarjeta-presentacion/" class="text-pink-600 hover:underline">Ver proyecto</a>
+            </div>
         </article>
 
-        <article class="bg-pink-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="fotos/menu.png" alt="Proyecto Menu Digital" class="w-full object-cover h-48" />
-          <div class="p-4">
-            <h4 class="font-semibold text-lg mb-2 text-pink-700">Menú Digital</h4>
-            <p class="text-gray-700 text-sm mb-3">Una página básica que simula un menú digital para Kuromi Kitchen.</p>
-            <a href="https://vitucab.github.io/menu-digital/" class="text-pink-600 hover:underline">Ver proyecto</a>
-          </div>
+        <article class="project-slide hidden bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
+            <img src="fotos/menu.png" alt="Proyecto Menu Digital" class="w-full object-cover h-48" />
+            <div class="p-4">
+                <h4 class="font-semibold text-lg mb-2 text-pink-700">Menú Digital</h4>
+                <p class="text-gray-700 text-sm mb-3">Una página básica que simula un menú digital para Kuromi Kitchen.</p>
+                <a href="https://vitucab.github.io/menu-digital/" class="text-pink-600 hover:underline">Ver proyecto</a>
+            </div>
         </article>
 
-        <article class="bg-pink-50 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
-          <img src="fotos/juego.png" alt="Proyecto Juego" class="w-full object-cover h-48" />
-          <div class="p-4">
-            <h4 class="font-semibold text-lg mb-2 text-pink-700">Juego simil Papers Please</h4>
-            <p class="text-gray-700 text-sm mb-3">Un juego que desarrollamos con compañeros basado en QT Creator, similar al juego "Papers Please".</p>
-            <a href="https://github.com/GoriliGorili/TPoo" class="text-pink-600 hover:underline">Ver proyecto</a>
-          </div>
+        <article class="project-slide hidden bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
+            <img src="fotos/juego.png" alt="Proyecto Juego" class="w-full object-cover h-48" />
+            <div class="p-4">
+                <h4 class="font-semibold text-lg mb-2 text-pink-700">Juego simil Papers Please</h4>
+                <p class="text-gray-700 text-sm mb-3">Un juego que desarrollamos con compañeros basado en QT Creator, similar al juego "Papers Please".</p>
+                <a href="https://github.com/GoriliGorili/TPoo" class="text-pink-600 hover:underline">Ver proyecto</a>
+            </div>
         </article>
-      </div>
-    </section>
+
+    </div>
+</section>
 
     <section id="experience" class="my-20 fade-in">
       <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block">Experiencia</h3>
@@ -200,5 +202,6 @@
     <small>Realizado por Victorina Cabrera © 2025 Todos los derechos reservados.</small>
   </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
