@@ -6,10 +6,10 @@ Este es mi portfolio personal diseñado para mostrar proyectos, experiencia, hab
 
 ## Tecnologías utilizadas
 
-᧔ෆ᧓ **HTML5** para la estructura semántica del sitio.  
-᧔ෆ᧓ **Tailwind CSS** para estilos rápidos, responsivos y con animaciones suaves.  
-᧔ෆ᧓ **JavaScript** básico para interacción con menú móvil.  
-᧔ෆ᧓ Uso de **SVGs** para iconos vectoriales en el footer (mis redes sociales).
+🎀 **HTML5** para la estructura semántica del sitio.  
+🎀 **Tailwind CSS** para estilos rápidos, responsivos y con animaciones suaves.  
+🎀 **JavaScript** básico para interacción con menú móvil.  
+🎀 Uso de **SVGs** para iconos vectoriales en el footer (mis redes sociales).
 
 ## Enlace al sitio desplegado
 
@@ -17,5 +17,5 @@ https://vitucab.github.io/portfolio-victorina-cabrera/
 
 ## Créditos
  
-- Iconos SVG basados en repositorios públicos y modificados para la ocasión.
-- Google Gemini por la ayuda con las animaciones.
+❀ Iconos SVG basados en repositorios públicos y modificados para la ocasión.  
+❀ Google Gemini por la asistencia y guía durante el desarrollo de este proyecto.
