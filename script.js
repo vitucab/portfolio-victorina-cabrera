@@ -44,7 +44,7 @@ if (heroSection) {
   for (let i = 0; i < bubbleCount; i++) {
     const bubble = document.createElement('div');
     bubble.classList.add('bubble');
-    const size = Math.random() * 60 + 20; // Tamaño entre 20px y 80px
+    const size = Math.random() * 60 + 20;
     bubble.style.width = `${size}px`;
     bubble.style.height = `${size}px`;
     bubble.style.left = `${Math.random() * 100}%`;

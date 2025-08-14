@@ -10,16 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     :root {
-    --sanrio-pink: #FFC0CB; /* Un rosa pastel característico */
+    --sanrio-pink: #FFC0CB;
   }
   .font-sanrio {
     font-family: 'Pacifico', cursive;
   }
   .title-shadow {
-    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5); /* Sombra para un toque suave */
+    text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5);
   }
   body {
-    cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym44.cur'), auto; /* Cursor de Hello Kitty */
+    cursor: url(fotos/selechk.cur), auto;
+}
+a, button, .cursor-pointer {
+    cursor: url(fotos/apretarhk.cur), pointer;
 }
     .fade-in {
       opacity: 0;
@@ -58,6 +61,10 @@
 @keyframes moveBubble {
   0% { transform: translateY(0) scale(1); opacity: 1; }
   100% { transform: translateY(-100vh) scale(0); opacity: 0; }
+}
+.social-icon-hover:hover {
+    transform: rotate(360deg) scale(1.2);
+    transition: transform 0.5s ease-in-out;
 }
   </style>
 </head>
@@ -216,7 +223,7 @@
     <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-6">
 
       <div class="group relative bg-pink-100 rounded-lg p-6 shadow-lg overflow-hidden cursor-pointer hover:bg-pink-200 transition">
-            <h4 class="font-bold text-xl text-pink-700 group-hover:text-pink-800 transition">C++</h4>
+            <h4 class="font-bold text-xl text-pink-700 group-hover:text-pink-800 transition glitter-effect">C++</h4>
             <div class="absolute inset-0 flex items-center justify-center bg-pink-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p class="text-white text-center text-sm p-2">Lenguaje para software de alto rendimiento, juegos y sistemas.</p>
             </div>
@@ -286,21 +293,21 @@
     <footer class="py-6 border-t border-pink-300 mt-20 text-center text-gray-600">
     <div class="flex justify-center gap-8 mb-4">
       <a href="https://github.com/vitucab" target="_blank" rel="noopener" aria-label="GitHub"
-        class="text-pink-600 hover:text-pink-800 transition text-3xl">
+        class="text-pink-600 hover:text-pink-800 transition text-3xl social-icon-hover">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7">
           <path
             d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.61-4.033-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.996.108-.775.418-1.305.76-1.605-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.468-2.38 1.236-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.984-.399 3.005-.404 1.02.005 2.048.138 3.006.404 2.29-1.552 3.295-1.23 3.295-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.609-2.807 5.624-5.48 5.922.43.37.814 1.1.814 2.22v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.627-5.373-12-12-12z" />
         </svg>
       </a>
       <a href="https://www.linkedin.com/in/maria-victorina-cabrera-50ab92320/" target="_blank" rel="noopener" aria-label="LinkedIn"
-        class="text-pink-600 hover:text-pink-800 transition text-3xl">
+        class="text-pink-600 hover:text-pink-800 transition text-3xl social-icon-hover">
         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-7 h-7">
           <path
             d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.78-1.75-1.75S5.53 4.22 6.5 4.22s1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.28h-3v-5.5c0-1.32-.03-3.03-1.85-3.03-1.85 0-2.13 1.44-2.13 2.93v5.6h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.6v5.58z" />
         </svg>
       </a>
       <a href="https://www.instagram.com/vitucabrera/" target="_blank" rel="noopener" aria-label="Instagram"
-        class="text-pink-600 hover:text-pink-800 transition text-3xl">
+        class="text-pink-600 hover:text-pink-800 transition text-3xl social-icon-hover">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" class="w-7 h-7">
           <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
