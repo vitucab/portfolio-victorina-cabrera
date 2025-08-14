@@ -6,10 +6,10 @@ Este es mi portfolio personal diseñado para mostrar proyectos, experiencia, hab
 
 ## Tecnologías utilizadas
 
-- **HTML5** para la estructura semántica del sitio.  
-- **Tailwind CSS** para estilos rápidos, responsivos y con animaciones suaves.  
-- **JavaScript** básico para interacción con menú móvil.  
-- Uso de **SVGs** para iconos vectoriales en el footer (mis redes sociales).
+᧔ෆ᧓ **HTML5** para la estructura semántica del sitio.  
+᧔ෆ᧓ **Tailwind CSS** para estilos rápidos, responsivos y con animaciones suaves.  
+᧔ෆ᧓ **JavaScript** básico para interacción con menú móvil.  
+᧔ෆ᧓ Uso de **SVGs** para iconos vectoriales en el footer (mis redes sociales).
 
 ## Enlace al sitio desplegado
 
