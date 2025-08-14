@@ -18,3 +18,4 @@ https://vitucab.github.io/portfolio-victorina-cabrera/
 ## Créditos
  
 - Iconos SVG basados en repositorios públicos y modificados para la ocasión.
+- Google Gemini por la ayuda con las animaciones.
