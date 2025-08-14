@@ -12,7 +12,7 @@ Este es mi portfolio personal diseñado para mostrar proyectos, experiencia, hab
 🎀 Uso de **SVGs** para iconos vectoriales en el footer (mis redes sociales).  
 🎀 **Google Fonts** para integrar tipografías personalizadas.
 
-## Enlace al sitio desplegado
+## Enlace a la página
 
 https://vitucab.github.io/portfolio-victorina-cabrera/
 
