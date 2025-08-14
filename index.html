@@ -66,6 +66,24 @@ a, button, .cursor-pointer {
     transform: rotate(360deg) scale(1.2);
     transition: transform 0.5s ease-in-out;
 }
+.shelf-background {
+    background-color: #ffe4f4;
+    padding: 40px 20px;
+}
+.product-box {
+    background-color: #fff4fb;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
   </style>
 </head>
 <body class="bg-pink-50 text-black-800 font-sans scroll-smooth">
@@ -106,13 +124,13 @@ a, button, .cursor-pointer {
   </div>
    <h1 class="text-xl text-gray-700 mb-2">¡Hola, soy</h1>
   <h1 class="text-5xl md:text-7xl font-extrabold text-pink-700 mb-4 leading-tight drop-shadow-md font-sanrio">
-    Victorina <span class="text-pink-700">Cabrera</span>
+    Victorina <span class="text-pink-700">Cabrera!</span>
   </h1>
   <h2 class="text-2xl md:text-3xl italic text-pink-700 mb-6 drop-shadow-sm">
     Desarrolladora Web Junior
   </h2>
   <p class="max-w-xl mx-auto text-gray-700 text-lg md:text-xl mb-8 leading-relaxed drop-shadow-sm">
-    Apasionada por crear sitios creativos, funcionales y que reflejen estilo personal.
+    Con muchas ganas de crear sitios ingeniosos, funcionales y que reflejen estilo personal ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა
   </p>
   <div class="flex gap-6">
     <a href="#contacto"
@@ -132,12 +150,12 @@ a, button, .cursor-pointer {
 
   <main class="pt-24 max-w-5xl mx-auto px-6">
 
-    <section id="projects" class="my-20 fade-in">
-    <h3 class="text-3xl font-bold text-pink-600 mb-8 border-b-4 border-pink-400 inline-block font-sanrio">Mis Proyectos</h3>
-    
+    <section id="projects" class="my-20 fade-in shelf-background shadow-md rounded-lg">
+    <h3 class="text-3xl font-bold text-pink-600 mb-8 text-center font-sanrio">Mis Proyectos</h3>
+    <div class="grid gap-8 md:grid-cols-3 max-w-4xl mx-auto "></div>
     <div id="project-container" class="relative">
 
-        <article class="project-slide active-slide bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
+        <article class="project-slide product-box active-slide bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
             <img src="fotos/tarjeta.png" alt="Proyecto Tarjeta Presentacion" class="w-full object-cover h-48" />
             <div class="p-4">
                 <h4 class="font-semibold text-lg mb-2 text-pink-700">Tarjeta de Presentación</h4>
@@ -146,7 +164,7 @@ a, button, .cursor-pointer {
             </div>
         </article>
 
-        <article class="project-slide hidden bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
+        <article class="project-slide product-box hidden bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
             <img src="fotos/menu.png" alt="Proyecto Menu Digital" class="w-full object-cover h-48" />
             <div class="p-4">
                 <h4 class="font-semibold text-lg mb-2 text-pink-700">Menú Digital</h4>
@@ -155,7 +173,7 @@ a, button, .cursor-pointer {
             </div>
         </article>
 
-        <article class="project-slide hidden bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
+        <article class="project-slide product-box hidden bg-pink-50 rounded-lg shadow-lg overflow-hidden transition-all duration-1000 ease-in-out">
             <img src="fotos/juego.png" alt="Proyecto Juego" class="w-full object-cover h-48" />
             <div class="p-4">
                 <h4 class="font-semibold text-lg mb-2 text-pink-700">Juego simil Papers Please</h4>
