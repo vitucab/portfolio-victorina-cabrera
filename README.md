@@ -9,7 +9,8 @@ Este es mi portfolio personal diseñado para mostrar proyectos, experiencia, hab
 🎀 **HTML5** para la estructura semántica del sitio.  
 🎀 **Tailwind CSS** para estilos rápidos, responsivos y con animaciones suaves.  
 🎀 **JavaScript** básico para interacción con menú móvil.  
-🎀 Uso de **SVGs** para iconos vectoriales en el footer (mis redes sociales).
+🎀 Uso de **SVGs** para iconos vectoriales en el footer (mis redes sociales).  
+🎀 **Google Fonts** para integrar tipografías personalizadas.
 
 ## Enlace al sitio desplegado
 
